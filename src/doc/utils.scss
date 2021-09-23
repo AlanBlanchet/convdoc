@@ -1,0 +1,5 @@
+@import './globals.scss';
+
+@function background-color-alpha($alpha) {
+  @return rgba($background-color, $alpha);
+}

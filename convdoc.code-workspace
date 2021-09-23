@@ -1,0 +1,15 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "none",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "code-runner.customCommand": ""
+  }
+}

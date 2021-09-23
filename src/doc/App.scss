@@ -1,0 +1,119 @@
+@import './utils.scss';
+
+body {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  background-color: $background-color;
+  color: $text-color;
+  font-family: Arial;
+
+  > #root {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    > header {
+      background-color: $background-color-dark;
+      padding: $padding;
+      display: flex;
+      align-items: center;
+
+      > .title {
+        flex-grow: 1;
+      }
+
+      > .version {
+        background-color: $primary-color;
+        padding: $padding;
+        border-radius: $smooth;
+        user-select: none;
+      }
+    }
+
+    > main {
+      flex-grow: 1;
+      display: flex;
+
+      > nav {
+        border-right: 4px solid $primary-color;
+        background-color: $background-color-light;
+        width: 300px;
+        padding: $padding;
+
+        > * {
+          display: flex;
+          justify-content: space-between;
+          padding: 4px;
+          &:hover {
+            background-color: $background-color;
+          }
+        }
+      }
+
+      > .content {
+        width: 100%;
+
+        .documentation {
+          display: flex;
+          flex-direction: column;
+          min-height: 100%;
+
+          &Banner {
+            display: flex;
+            padding: 10px;
+            font-size: large;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          &Content {
+            margin: 10px 10% 10px 3%;
+            padding: 20px;
+            background-color: $background-color-dark;
+            flex-grow: 1;
+
+            &Comment {
+              padding: 5px;
+              margin: 3px;
+              background-color: $background-color;
+              > * {
+                &:is(h1, h2, h3, h4, h5, h6) {
+                  color: $primary-color;
+                }
+              }
+              > p {
+                padding-left: 20px;
+                font-size: 0.8em;
+              }
+            }
+          }
+
+          &Footer {
+            margin: 10px 0 0 0;
+            padding: 10px;
+            border-top: 3px double $primary-color;
+            background-color: $background-color-light;
+            justify-self: flex-end;
+          }
+        }
+      }
+    }
+  }
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 5px;
+}

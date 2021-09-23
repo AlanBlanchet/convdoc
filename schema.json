@@ -1,0 +1,10 @@
+{
+  "properties": {
+    "include": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
